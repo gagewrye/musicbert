@@ -9,7 +9,7 @@
     $ pip install --editable ./<br>
    $ cd fairseq/data/<br>
    $ nano indexed_dataset.py <br>
-     Go to line 101, 306 and change np.float to np.float64. np.float is deprecated<br>
+     Go to line 101, 306 and change np.float to np.float64. np.float is deprecated
 4. Download Giant Midi dataset
 5. preprocess the Giant dataset into Octuple format using preprocess.py<br>
    $ python3 -u preprocess.py<br>
@@ -17,7 +17,7 @@
    OctupleMIDI output path: GiantMidiOct<br>
     This will create GiantMidiOct_data_raw<br><br>
 7. Binarize Giant dataset using binarize_pretrain.sh<br>
-   $ bash binarize_pretrain.sh GiantMidiOct      This will create GiantMidiOct_data_bin<br>
+   $ bash binarize_pretrain.sh GiantMidiOct      This will create GiantMidiOct_data_bin
 9. Train MusicBert base model checkpoint on the Giant to refine the model to piano solo midi<br>
     $ bash train_mask.sh GiantMidiOct base<br>
 11. Prepare our classification data. Make Octuple midi files for each composer in the classification task. In our case it is Bach, Beetoven, Chopin, and Liszt. Save these into a base directory called composers. Place each composer’s music into separate files with the names of the composer they contain.<br>
