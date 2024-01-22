@@ -1,3 +1,6 @@
+This repository is an attempt at using OctupleMIDI encoding and MusicBERT's pretrained symbolic music model to evaluate MusicBERT’s performance in artist classification using a limited dataset, specifically solo piano performances from classical
+composers within the GiantMIDI dataset.
+
 # Musicbert steps
 1. Setup an Ubuntu environment with python 3.9
 2. Install requirements from requirements.txt $ pip install -r requirements.txt <br>
