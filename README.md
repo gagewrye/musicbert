@@ -4,23 +4,26 @@ composers within the GiantMIDI dataset.
 
 # Musicbert steps
 1. Setup an Ubuntu environment with python 3.9
-2. Install requirements from requirements.txt $ pip install -r requirements.txt <br>
+2. Install requirements from requirements.txt <br>
+   $ pip install -r requirements.txt <br>
+3. Install the rest of the dependencies
    $ pip install miditoolkit <br>
    $ pip install scikit-learn  <br>
    $ git clone https://github.com/pytorch/fairseq <br>
     $ cd fairseq<br>
    $ git checkout 336942734c85791a90baa373c212d27e7c722662<br>
     $ pip install --editable ./<br>
+5. Edit the fairseq library to be compatible with other libraries. It is an unreleased version with less support.
    $ cd fairseq/data/<br>
    $ nano indexed_dataset.py <br>
      Go to line 101, 306 and change np.float to np.float64. np.float is deprecated
-4. Download Giant Midi dataset
-5. preprocess the Giant dataset into Octuple format using preprocess.py<br>
+6. Download Giant Midi dataset
+7. preprocess the Giant dataset into Octuple format using preprocess.py<br>
    $ python3 -u preprocess.py<br>
    Input: Dataset zip path: ~/GiantMidi.zip<br>
    OctupleMIDI output path: GiantMidiOct<br>
     This will create GiantMidiOct_data_raw<br>
-7. Binarize Giant dataset using binarize_pretrain.sh<br>
+8. Binarize Giant dataset using binarize_pretrain.sh<br>
    $ bash binarize_pretrain.sh GiantMidiOct      This will create GiantMidiOct_data_bin
 9. Train MusicBert base model checkpoint on the Giant to refine the model to piano solo midi<br>
     $ bash train_mask.sh GiantMidiOct base<br>
