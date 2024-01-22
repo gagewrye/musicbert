@@ -1,8 +1,8 @@
 # Musicbert steps
 1. Setup an Ubuntu environment with python 3.9
-2. Install requirements from requirements.txt $ pip install -r requirements.txt
-   $ pip install miditoolkit
-   $ pip install scikit-learn
+2. Install requirements from requirements.txt $ pip install -r requirements.txt /
+   $ pip install miditoolkit /
+   $ pip install scikit-learn /
    $ git clone https://github.com/pytorch/fairseq
     $ cd fairseq
    $ git checkout 336942734c85791a90baa373c212d27e7c722662
