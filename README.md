@@ -6,7 +6,7 @@ composers within the GiantMIDI dataset.
 1. Setup an Ubuntu environment with python 3.9
 2. Install requirements from requirements.txt <br>
    $ pip install -r requirements.txt <br>
-3. Install the rest of the dependencies
+3. Install the rest of the dependencies <br>
    $ pip install miditoolkit <br>
    $ pip install scikit-learn  <br>
    $ git clone https://github.com/pytorch/fairseq <br>
