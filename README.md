@@ -1,3 +1,4 @@
+# About
 This repository is an attempt at using OctupleMIDI encoding and MusicBERT's pretrained symbolic music model to evaluate MusicBERT’s performance in artist classification using a limited dataset, specifically solo piano performances from classical
 composers within the GiantMIDI dataset.
 
