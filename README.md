@@ -15,7 +15,7 @@
    $ python3 -u preprocess.py<br>
    Input: Dataset zip path: ~/GiantMidi.zip<br>
    OctupleMIDI output path: GiantMidiOct<br>
-    This will create GiantMidiOct_data_raw<br><br>
+    This will create GiantMidiOct_data_raw<br>
 7. Binarize Giant dataset using binarize_pretrain.sh<br>
    $ bash binarize_pretrain.sh GiantMidiOct      This will create GiantMidiOct_data_bin
 9. Train MusicBert base model checkpoint on the Giant to refine the model to piano solo midi<br>
@@ -27,6 +27,6 @@
          - This will split the data into raw and binarized folders<br>
     'Main dataset zip path: ' composers.zip (All data in labeled subset)<br>
     'sequence length: ' 500<br>
-    $ bash train_composer.sh composers 13 0 /xxx/checkpoint_last_musicbert_base<br><br>
+    $ bash train_composer.sh composers 13 0 /xxx/checkpoint_last_musicbert_base<br>
 14. Evaluate the classifier<br>
     $ python -u eval_genre.py checkpoints/checkpoint_last_genre_topmagd_x_checkpoint_last_musicbert_small.pttopmagd_data_bin/x
