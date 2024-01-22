@@ -36,4 +36,4 @@ composers within the GiantMIDI dataset.
     'sequence length: ' 500<br>
     $ bash train_composer.sh composers 13 0 /xxx/checkpoint_last_musicbert_base<br>
 14. Evaluate the classifier<br>
-    $ python -u eval_genre.py checkpoints/checkpoint_last_genre_topmagd_x_checkpoint_last_musicbert_small.pttopmagd_data_bin/x
+    $ python -u eval_genre.py /xxx/checkpoint_last_musicbert_base.pt
