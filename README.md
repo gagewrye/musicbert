@@ -13,7 +13,7 @@ composers within the GiantMIDI dataset.
     $ cd fairseq<br>
    $ git checkout 336942734c85791a90baa373c212d27e7c722662<br>
     $ pip install --editable ./<br>
-5. Edit the fairseq library to be compatible with other libraries. It is an unreleased version with less support.
+5. Edit the fairseq library to be compatible with other libraries. It is an unreleased version with less support. <br>
    $ cd fairseq/data/<br>
    $ nano indexed_dataset.py <br>
      Go to line 101, 306 and change np.float to np.float64. np.float is deprecated
